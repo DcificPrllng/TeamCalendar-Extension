@@ -1,0 +1,36 @@
+/*Birthday/Anniversary*/
+.customLegendColors .sapMeOverlapCalendarType04 {
+    background-color: #8BC34A;
+    z-index: -1;
+}
+.customLegendColors .sapMeCalendarLegendApproval .sapUIMeLegendColorForType04 {
+    background-color: #8BC34A;
+}
+
+/*Time Off*/
+.customLegendColors .sapMeOverlapCalendarType01 {
+    background-color: #8BC34A;
+    z-index: -1;
+}
+.customLegendColors .sapMeCalendarLegendApproval .sapUIMeLegendColorForType01 {
+    background-color: #8BC34A;
+}
+
+/*Other*/
+.customLegendColors .sapMeOverlapCalendarType07 {
+    background-color: #FF5722;
+    z-index: -1;
+}
+.customLegendColors .sapMeCalendarLegendApproval .sapUIMeLegendColorForType07 {
+    background-color: #FF5722;
+}
+
+
+/*Public Holiday*/
+.customLegendColors .sapMeOverlapCalendarType06 {
+    background-color: #ffc107;
+    z-index: -1;
+}
+.customLegendColors .sapMeCalendarLegendApproval .sapUIMeLegendColorForType06 {
+    background-color: #ffc107;
+}

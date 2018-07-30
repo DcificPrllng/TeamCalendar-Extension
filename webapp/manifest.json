@@ -1,0 +1,50 @@
+{
+	"_version": "1.1.0",
+	"sap.app": {
+		"_version": "1.3.0",
+		"id": "hcm.myteamcalendar.HCM_TEAM_CALExtension",
+		"type": "application",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{FULLSCREEN_TITLE}}"
+	},
+	"sap.ui": {
+		"_version": "1.3.0",
+		"technology": "UI5",
+		"icons": {
+			"icon": "sap-icon://task",
+			"favIcon": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb,sap_bluecrystal,sap_belize"
+		]
+	},
+	"sap.ui5": {
+		"_version": "1.2.0",
+		"resources": {
+			"js":[{
+				"uri":"dummy.js"
+			}],
+			"css": [{
+				"uri": "css/custom.css"
+			}]
+		},
+		"dependencies": {
+			"minUI5Version": "1.28.5"
+		},
+		"extends": {
+			"component": "hcm.myteamcalendar",
+			"extensions": {}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		}
+	}
+}

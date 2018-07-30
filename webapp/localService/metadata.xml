@@ -1,0 +1,51 @@
+<!--
+
+    Copyright (C) 2009-2014 SAP SE or an SAP affiliate company. All rights reserved
+
+-->
+<?xml version="1.0" encoding="utf-8" ?>
+-
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+	-
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		-
+		<Schema Namespace="HCM_TEAM_CALENDAR_SRV" xml:lang="en" sap:schema-version="0000" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+			-
+			<EntityType Name="Employee" sap:content-version="1">
+				-
+				<Key>
+					<PropertyRef Name="EmployeeID"/>
+				</Key>
+				<Property Name="EmployeeID" Type="Edm.String" Nullable="false" MaxLength="8" sap:label="Personnel No." sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/>
+				<Property Name="Name" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="StartDate" Type="Edm.DateTime" Nullable="false" Precision="0" sap:label="Date" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false"/>
+				<Property Name="EndDate" Type="Edm.DateTime" Nullable="false" Precision="0" sap:label="Date" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false"/>
+				<Property Name="IsRequester" Type="Edm.Boolean" Nullable="false" sap:label="TRUE" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/>
+				<Property Name="SectionCode" Type="Edm.String" Nullable="false" MaxLength="1" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/>
+				<Property Name="RowNumber" Type="Edm.Byte" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false"
+					sap:filterable="false"/>
+				<Property Name="CalendarEventType" Type="Edm.String" Nullable="false" MaxLength="2" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/>
+				<Property Name="CalendarEventDescription" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/>
+				<Property Name="AppMode" Type="Edm.String" Nullable="false" MaxLength="1" sap:label="Application Mode" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false"/>
+			</EntityType>
+			-
+			<EntityContainer Name="HCM_TEAM_CALENDAR_SRV_Entities" m:IsDefaultEntityContainer="true">
+				<EntitySet Name="EmployeeCollection" EntityType="HCM_TEAM_CALENDAR_SRV.Employee" sap:content-version="1"/>
+			</EntityContainer>
+			<atom:link rel="self" href="https://ldcigm4.wdf.sap.corp:44355/sap/opu/odata/sap/HCM_TEAM_CALENDAR_SRV/$metadata"
+				xmlns:atom="http://www.w3.org/2005/Atom"/>
+			<atom:link rel="latest-version" href="https://ldcigm4.wdf.sap.corp:44355/sap/opu/odata/sap/HCM_TEAM_CALENDAR_SRV/$metadata"
+				xmlns:atom="http://www.w3.org/2005/Atom"/>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
