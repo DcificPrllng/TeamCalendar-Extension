@@ -28,12 +28,11 @@
 	"sap.ui5": {
 		"_version": "1.2.0",
 		"resources": {
-			"js":[{
-				"uri":"dummy.js"
-			}],
-			"css": [{
-				"uri": "css/custom.css"
-			}]
+			"css": [
+				{
+					"uri": "css/custom.css"
+				}
+			]
 		},
 		"dependencies": {
 			"minUI5Version": "1.28.5"
@@ -46,5 +45,9 @@
 			"compact": true,
 			"cozy": true
 		}
+	},
+	"sap.platform.abap": {
+		"uri": "/sap/bc/ui5_ui5/sap/zteam_calendar/webapp",
+		"_version": "1.1.0"
 	}
 }

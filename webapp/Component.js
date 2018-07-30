@@ -11,13 +11,11 @@ sap.ui.component.load({
 
 this.hcm.myteamcalendar.Component.extend("hcm.myteamcalendar.HCM_TEAM_CALExtension.Component", {
 	metadata: {
-		version: "1.0.0"
+		version: "1.0.0",
+		manifest: "json"
 	},
 	init: function(){
 		//This will add a class to the whole app. This class will be used to add custom colors. 
 		this.getRootControl().addStyleClass("customLegendColors");
-		
-		//Load the CSS file. Manifets.json is somehow not loading the CSS file. Workaround
-		jQuery.sap.includeStyleSheet("css/custom.css","id");
 	}
 });
